@@ -1,0 +1,26 @@
+[pyprland]
+plugins = ["scratchpads"]
+
+
+[scratchpads.term]
+animation = "fromTop"
+command = "kitty --class kitty-dropterm"
+class = "kitty-dropterm"
+size = "75% 60%"
+max_size = "1920px 100%"
+margin = 50
+
+[scratchpads.volume]
+animation = "fromRight"
+command = "pavucontrol"
+class = "org.pulseaudio.pavucontrol"
+size = "40% 90%"
+unfocus = "hide"
+lazy = true
+
+[scratchpads.gpt]
+animation = "fromTop"
+command = "brave --profile-directory=Default --app=https://chat.openai.com"
+class = "brave-chat.openai.com__-Default"
+size = "75% 60%"
+process_tracking = false
